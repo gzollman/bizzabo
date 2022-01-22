@@ -19,7 +19,7 @@ resource "aws_subnet" "alb-public-subnet" {
   map_public_ip_on_launch = true
 
   tags = {
-    Name = "hello-world--public-subnet"
+    Name = "hello-world-public-subnet"
   }
 }
 
