@@ -7,7 +7,8 @@ def isPagination(PaginationToken):
 
 import boto3
 import re
-client = boto3.client('resourcegroupstaggingapi', 'us-east-1')
+region = input('AWS Region >').lower()
+client = boto3.client('resourcegroupstaggingapi', region)
 used_resources = []
 done = False
 command = input('AWS Service >').lower()
